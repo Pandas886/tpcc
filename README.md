@@ -104,3 +104,11 @@ java -classpath target/tpcc-1.0.0-SNAPSHOT-jar-with-dependencies.jar com.codefut
 
 ```
 其中  sc:success 、  lt:late 、 rt:retry 、 fl:failure
+
+# 实战测试
+在本次测试中，设置 warehouse 数量为100，MySQL 数据库中对应的初始数据集大小约为10G。下表展示了初始数据集下各张表的数据记录数以及开启一小时 TPC-C 测试后各张表的数据记录变化情况。
+![img_3.png](img_3.png)
+
+TpccLoad会模拟5个 OLTP 型负载：NewOrder, Payment, OrderStatus, Delivery 和 StockLevel
+
+![img_2.png](img_2.png)
